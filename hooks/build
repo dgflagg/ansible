@@ -5,3 +5,7 @@ docker build \
     --build-arg ubuntu_distro="${UBUNTU_DISTRO}" \
     --build-arg ansible_version="${ANSIBLE_VERSION}" \
     -t "dgflagg/acm:${ANSIBLE_VERSION}-${UBUNTU_DISTRO}" .
+
+docker tag "dgflagg/acm:${ANSIBLE_VERSION}-${UBUNTU_DISTRO}" "dgflagg/acm:latest"
+
+docker push "dgflagg/acm:${ANSIBLE_VERSION}-${UBUNTU_DISTRO}"
