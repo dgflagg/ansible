@@ -3,5 +3,5 @@
 docker build \
     --build-arg debian_distro="${DEBIAN_DISTRO}" \
     --build-arg ubuntu_distro="${UBUNTU_DISTRO}" \
-    --build-arg ansible_version="${ANSIBLE_VERSION}"" \
+    --build-arg ansible_version="${ANSIBLE_VERSION}" \
     -t "dgflagg/acm:${ANSIBLE_VERSION}-${UBUNTU_DISTRO}" .
